@@ -1,0 +1,64 @@
+<div class="limiter">
+  <div class="container-login100">
+
+    <div class="wrap-login100 p-b-160 p-t-50">
+      <form class="login100-form validate-form">
+					<span class="login100-form-title p-b-43">
+            <b>Product Data</b>
+					</span>
+
+        <div _ngcontent-c1="" class="wrap-input100 rs1 validate-input" data-validate="Product_ID is required">
+          <input _ngcontent-c1="" class="input100" name="pass" pinputtext type="text">
+          <span _ngcontent-c1="" class="label-input100">Product ID</span>
+        </div>
+
+
+        <div class="wrap-input100 rs2 validate-input" data-validate="Product_Name is required">
+          <input class="input100" type="text" name="pass" pinputtext />
+          <span class="label-input100">Product Name</span>
+        </div>
+
+
+        <div class="wrap-input100  validate-input" data-validate="Product_Amount is required">
+          <input class="input100" type="number" name="pass" maxlength="8" minlength="1" pinputtext />
+          <span class="label-input100">Production Amount</span>
+        </div>
+
+
+
+        <div class="wrap-input100  validate-input" data-validate="Select the GST">
+          <select style="
+    width:  100%;
+    height:  100%;
+    font-size: 19px;
+    padding: 1% 5%;
+">
+            <option  *ngFor='let i of list'>{{i}}</option>
+          </select>
+        </div>
+
+
+
+
+        <div class="container-login100-form-btn">
+
+          <button style="height:  50px;" pButton type="button" class="container-login100-form-btn" onclick="alert('Product Added Succesfully')">
+            ADD PRODUCT
+          </button>
+
+        </div>
+
+
+
+
+        <div class="container-login100-form-btn">
+          <button routerLink="/Login" style="height: 33px;width: 81px;text-align: center;align-items: center;margin-top: 59px;margin-right: 469px;" pButton type="button" class="container-login100-form-btn">
+            Log Out
+          </button>
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+</div>

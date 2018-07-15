@@ -1,0 +1,39 @@
+<div class="limiter">
+  <div class="container-login100">
+    <div class="wrap-login100 p-b-160 p-t-50">
+      <form class="login100-form validate-form">
+					<span class="login100-form-title p-b-43">
+            <b>Login</b>
+					</span>
+
+        <div _ngcontent-c1="" class="wrap-input100 rs1 validate-input" data-validate="Username is required">
+          <input _ngcontent-c1="" class="input100" name="usr" pinputtext="" [(ngModel)]="name"  type="text">
+          <span _ngcontent-c1="" class="label-input100">Username</span>
+        </div>
+
+
+        <div class="wrap-input100 rs2 validate-input" data-validate="Password is required">
+          <input class="input100" type="password" value="password" name="pass" pPassword  [(ngModel)]="password" />
+          <span class="label-input100">Password</span>
+        </div>
+
+        {{error_msg}}
+
+        <div class="container-login100-form-btn">
+          <button style="height:  50px;" pButton type="button" class="container-login100-form-btn" (click)="login(name,password)"  >
+            SIGN IN
+          </button>
+        </div>
+
+        <!--<div class="container-login100-form-btn">-->
+          <!--<button style="height:  50px;" pButton type="button" class="container-login100-form-btn" routerLink="/Staff" >-->
+            <!--SIGN IN Staff-->
+          <!--</button>-->
+        <!--</div>-->
+
+
+
+      </form>
+    </div>
+  </div>
+</div>

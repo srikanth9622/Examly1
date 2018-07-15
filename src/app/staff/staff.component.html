@@ -1,0 +1,49 @@
+
+
+
+<div class="container-login100">
+
+  <header>
+    <h1>Bill Invoice</h1>
+  </header>
+  <table class="inventory">
+    <thead>
+    <tr>
+      <th><span contenteditable>Product_ID</span></th>
+      <th><span contenteditable>Product Name</span></th>
+      <th><span contenteditable>Rate</span></th>
+      <th><span contenteditable>Quantity</span></th>
+      <th><span contenteditable>Price</span></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let i of list">
+      <td><a (click)="changminus()" class="cut">-</a><span contenteditable><input  type="text"></span></td>
+      <td><span contenteditable><input  type="text"></span></td>
+      <td><span data-prefix>Rs.</span><span contenteditable ><input  type="number" [(ngModel)]="qup[i]"></span></td>
+      <td><span contenteditable ><input type="number" [(ngModel)]="qu[i]" (change)="func(i)" (cuechange)="func(i)"> </span></td>
+      <td><span data-prefix>Rs.</span><span >{{qu_value[i]}}</span></td>
+    </tr>
+    </tbody>
+  </table>
+  <a (click)="changadd()" class="add" onclick="">+</a>
+  <table class="balance">
+    <tr>
+      <th><span contenteditable>Total</span></th>
+      <td><span data-prefix>Rs.</span><span>{{t_value[i]}}</span></td>
+    </tr>
+  </table>
+
+
+<div class="container-login100-form-btn">
+  <button style="height:  50px;width: 109px;margin-left: 1091px" pButton type="button" class="container-login100-form-btn" onclick="alert('Thank You ')" >
+    Check Out
+  </button>
+</div>
+
+<div class="container-login100-form-btn">
+  <button style="height: 31px;width:  82px;padding: 0px;margin-right: 1105px;margin-top: 227px;" pButton type="button" class="container-login100-form-btn"  routerLink="/Login" >
+    Log Out
+  </button>
+</div>
+</div>
